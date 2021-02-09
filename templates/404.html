@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Page Not Found {% endblock %}
+
+
+{% block page_content %}
+
+<div class="container text-center">
+  <h1 class="jumbotron-heading">Page Not Found</h1>
+  <p class="lead">Sorry, looks like you're looking for a shortcut that you haven't yet made!  Click on the New URL or Home button and create your shortcut!!</p>
+  <p>
+    <a href="{{ url_for('index') }}"><button class="btn btn-primary my-2">Home</button></a>
+  </p>
+</div>
+
+{% endblock %}
